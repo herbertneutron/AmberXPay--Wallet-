@@ -1,0 +1,99 @@
+﻿@model AmberXPay.Models.AmberXPayModel
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<!-- loader -->
+<div id="loader" style="background-color:white">
+    <img src="~/assets/img/Amberxpay-favicon1.png" alt="icon" class="loading-icon">
+</div>
+<!-- * loader -->
+<!-- App Header -->
+<div style="background-image: url('/assets/img/Background1.jpg');background-size:cover;background-repeat:no-repeat;height:100vh">
+    <div class="appHeader no-border transparent position-absolute">
+
+        <div class="pageTitle">
+            <img src="~/assets/img/Amberxpay_logo1.png" alt="logo" class="logo">
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <!-- * App Header -->
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section mt-2 text-center">
+
+            <h4 style="color:#ffb400!important">Please provide your login details</h4>
+        </div>
+        <div class="section mb-5 p-2" style="max-width:80vh;margin:0 auto">
+
+            @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @class = "", role = "form", enctype = "multipart/form-data", }))
+            {
+                @Html.AntiForgeryToken()
+                <div class="card">
+                    <div class="card-body pb-1">
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="email1">E-mail</label>
+                                <input type="email" name="Email"  class="form-control"  placeholder="">
+                                <i class="clear-input"><ion-icon name="close-circle"></ion-icon></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group basic">
+                            <div class="input-wrapper">
+                                <label class="label" for="password1">Password</label>
+                                <input type="password" name="Password" class="form-control" id="password1" placeholder="">
+                                <i class="clear-input"><ion-icon name="close-circle"></ion-icon></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-links mt-2">
+                    <div>
+                        <a style="color:#ffffff!important" href="/Home/Register">Register Now</a>
+                    </div>
+                    <div><a style="color:#ffffff!important" href="/Home/ForgotPassword" class="text-muted">Forgot Password?</a></div>
+                </div>
+
+                <div class="form-button-group  transparent" style="max-width:80vh;margin:0 auto">
+                    <button type="submit" style="background-color:#dea00b!important;border-color:#dea00b!important" class="btn btn-primary btn-block btn-lg">Log in</button>
+                </div>
+            }
+        </div>
+
+    </div>
+
+</div>
+<script src="~/assets/js/lib/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap-->
+<script src="~/assets/js/lib/popper.min.js"></script>
+<script src="~/assets/js/lib/bootstrap.min.js"></script>
+<!-- Ionicons -->
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!-- Owl Carousel -->
+<script src="~/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+<!-- Base Js File -->
+<script src="~/assets/js/base.js"></script>
+
+
+<script>
+
+    function AccountCreated(title, message, icon) {
+        swal({
+            title: title,
+            text: message,
+            icon: icon,
+            //timer: 3000,
+            button: "okay"
+        }).then(function () {
+            window.location.href = '#';
+        });
+
+    }
+
+    @Html.Raw(ViewBag.ErrorMessage)
+
+</script>
+

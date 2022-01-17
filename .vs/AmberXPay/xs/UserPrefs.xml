@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{42BC95D0-E425-4B31-9CE8-194CC02A5F0C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Home/Login.cshtml">
+    <Files>
+      <File FileName="Views/Home/Register.cshtml" Line="31" Column="13" IsPinned="True" />
+      <File FileName="Models/ErrorViewModel.cs" IsPinned="True" />
+      <File FileName="Controllers/HomeController.cs" />
+      <File FileName="Views/Home/App.cshtml" />
+      <File FileName="Views/Home/Login.cshtml" Line="96" Column="1" />
+      <File FileName="Startup.cs" />
+      <File FileName="Models/AmberXPayModel.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Models/WalletModel.cs" />
+      <File FileName="Views/Home/WebApp.cshtml" />
+      <File FileName="Views/Home/Settings.cshtml" />
+      <File FileName="appsettings.json" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Views/Home/Index.cshtml" />
+      <File FileName="Models/UserData.cs" />
+      <File FileName="Models/Response.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AmberXPay" expanded="True">
+            <Node name="AmberXPay" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Login.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True">
+                  <Node name="css" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AmberXPay PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
